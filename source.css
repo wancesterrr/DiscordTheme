@@ -6444,3 +6444,17 @@ body,
         0 4px 12px rgba(0,0,0,.25),
         0 0 8px rgba(140,220,255,.25);
 }
+
+/* --- Aktivite/Durum kartını daha belirgin yap (blur + görünür çerçeve) --- */
+.interactive_bf1984 {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    backdrop-filter: blur(12px) saturate(150%) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(150%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.emptyCard__7e549 {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    backdrop-filter: blur(12px) saturate(150%) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(150%) !important;
+}
