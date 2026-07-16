@@ -1991,16 +1991,19 @@ body,
 .button__201d5 .text-sm\/medium_cf4812,
 .button__201d5 .text-sm\/semibold_cf4812,
 .button__201d5 .text-sm\/bold_cf4812,
-.button__201d5 .text-md\/semibold_cf4812,
-.button__201d5 .contents__201d5 {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 6px;
+.button__201d5 .text-md\/semibold_cf4812 {
+    position: relative !important;
+    top: -3px !important;
+}
 
-  color: inherit !important;
-  font-weight: 500;
-  line-height: 1 !important;
+.button__201d5 .contents__201d5 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px;
+
+    color: inherit !important;
+    font-weight: 500;
 }
 
 .sizeSmall__201d5,
