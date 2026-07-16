@@ -6397,6 +6397,7 @@ body,
 
 /* ADD ADDITIONAL CSS BELOW HERE */
 
+/* --- WanceCord yazısı --- */
 .visual-refresh .bar_c38106 {
     position: relative;
 }
@@ -6433,12 +6434,10 @@ body,
     font: 800 15px "Segoe UI Variable","Segoe UI","Trebuchet MS",sans-serif;
     letter-spacing: 0.3px;
 
-    /* Net okunabilirlik için güçlü koyu gölge (arkada ne olursa olsun kontrast sağlar) */
     text-shadow:
         0 1px 3px rgba(0,0,0,.8),
         0 0 8px rgba(0,0,0,.45);
 
-    /* Cam baloncuk derinliği: üstte ince ışık çizgisi, altta hafif gölge, dışarıda yumuşak glow */
     box-shadow:
         inset 0 1px 1px rgba(255,255,255,.7),
         inset 0 -2px 4px rgba(0,0,0,.15),
@@ -6446,9 +6445,9 @@ body,
         0 0 8px rgba(140,220,255,.25);
 }
 
-/* --- Art arda gelen mesajları TEK baloncuk gibi birleştir (GÜÇLENDİRİLMİŞ) --- */
+/* --- Art arda gelen mesajları TEK baloncuk gibi birleştir --- */
 
-/* Devam mesajının üst köşelerini kare yap */
+/* Devam mesajının üst köşelerini kare yap + üst boşluğu sıfırla */
 .wrapper_c19a55:not(.groupStart__5126c) {
     margin-block-start: 0 !important;
     border-start-start-radius: 0 !important;
@@ -6464,8 +6463,7 @@ body,
     overflow: hidden;
 }
 
-/* İhtimal 2: .wrapper_c19a55 elemanları .messageListItem__5126c içinde sarılı,
-   asıl kardeşlik dış kapsayıcılar arasında */
+/* İhtimal 2: .wrapper_c19a55 elemanları .messageListItem__5126c içinde sarılı */
 .messageListItem__5126c:has(+ .messageListItem__5126c .wrapper_c19a55:not(.groupStart__5126c)) .wrapper_c19a55,
 .messageListItem__5126c:has(+ .messageListItem__5126c .wrapper_c19a55:not(.groupStart__5126c)) {
     border-end-start-radius: 0 !important;
@@ -6474,4 +6472,9 @@ body,
 .messageListItem__5126c .wrapper_c19a55:has(~ .messageListItem__5126c .wrapper_c19a55:not(.groupStart__5126c)) {
     border-end-start-radius: 0 !important;
     border-end-end-radius: 0 !important;
+}
+
+/* --- Farklı kişi/mesaj grupları arasındaki fazla boşluğu azalt --- */
+.wrapper_c19a55.groupStart__5126c {
+    margin-block-start: 6px !important;
 }
